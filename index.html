@@ -37,6 +37,264 @@ h2 {
   color: #888;
   font-size: 2em;
 }
+/* General CSS Setup */
+body{
+  background-color: lightblue;
+  font-family: "Ubuntu-Italic", "Lucida Sans", helvetica, sans;
+}
+
+/* container */
+.container {
+  padding: 5% 5%;
+}
+
+/* CSS talk bubble */
+.talk-bubble {
+	margin: 40px;
+  display: inline-block;
+  position: relative;
+	width: 900px;
+	height: auto;
+	background-color: lightyellow;
+}
+.border{
+  border: 8px solid #666;
+}
+.round{
+  border-radius: 30px;
+	-webkit-border-radius: 30px;
+	-moz-border-radius: 30px;
+
+}
+
+/* Right triangle placed top left flush. */
+.tri-right.border.left-top:before {
+	content: ' ';
+	position: absolute;
+	width: 0;
+	height: 0;
+  left: -40px;
+	right: auto;
+  top: -8px;
+	bottom: auto;
+	border: 32px solid;
+	border-color: #666 transparent transparent transparent;
+}
+.tri-right.left-top:after{
+	content: ' ';
+	position: absolute;
+	width: 0;
+	height: 0;
+  left: -20px;
+	right: auto;
+  top: 0px;
+	bottom: auto;
+	border: 22px solid;
+	border-color: lightyellow transparent transparent transparent;
+}
+
+/* Right triangle, left side slightly down */
+.tri-right.border.left-in:before {
+	content: ' ';
+	position: absolute;
+	width: 0;
+	height: 0;
+  left: -40px;
+	right: auto;
+  top: 30px;
+	bottom: auto;
+	border: 20px solid;
+	border-color: #666 #666 transparent transparent;
+}
+.tri-right.left-in:after{
+	content: ' ';
+	position: absolute;
+	width: 0;
+	height: 0;
+  left: -20px;
+	right: auto;
+  top: 38px;
+	bottom: auto;
+	border: 12px solid;
+	border-color: lightyellow lightyellow transparent transparent;
+}
+
+/*Right triangle, placed bottom left side slightly in*/
+.tri-right.border.btm-left:before {
+	content: ' ';
+	position: absolute;
+	width: 0;
+	height: 0;
+	left: -8px;
+  right: auto;
+  top: auto;
+	bottom: -40px;
+	border: 32px solid;
+	border-color: transparent transparent transparent #666;
+}
+.tri-right.btm-left:after{
+	content: ' ';
+	position: absolute;
+	width: 0;
+	height: 0;
+	left: 0px;
+  right: auto;
+  top: auto;
+	bottom: -20px;
+	border: 22px solid;
+	border-color: transparent transparent transparent lightyellow;
+}
+
+/*Right triangle, placed bottom left side slightly in*/
+.tri-right.border.btm-left-in:before {
+	content: ' ';
+	position: absolute;
+	width: 0;
+	height: 0;
+	left: 30px;
+  right: auto;
+  top: auto;
+	bottom: -40px;
+	border: 20px solid;
+	border-color: #666 transparent transparent #666;
+}
+.tri-right.btm-left-in:after{
+	content: ' ';
+	position: absolute;
+	width: 0;
+	height: 0;
+	left: 38px;
+  right: auto;
+  top: auto;
+	bottom: -20px;
+	border: 12px solid;
+	border-color: lightyellow transparent transparent lightyellow;
+}
+
+/*Right triangle, placed bottom right side slightly in*/
+.tri-right.border.btm-right-in:before {
+	content: ' ';
+	position: absolute;
+	width: 0;
+	height: 0;
+  left: auto;
+	right: 30px;
+	bottom: -40px;
+	border: 20px solid;
+	border-color: #666 #666 transparent transparent;
+}
+.tri-right.btm-right-in:after{
+	content: ' ';
+	position: absolute;
+	width: 0;
+	height: 0;
+  left: auto;
+	right: 38px;
+	bottom: -20px;
+	border: 12px solid;
+	border-color: lightyellow lightyellow transparent transparent;
+}
+/*
+	left: -8px;
+  right: auto;
+  top: auto;
+	bottom: -40px;
+	border: 32px solid;
+	border-color: transparent transparent transparent #666;
+	left: 0px;
+  right: auto;
+  top: auto;
+	bottom: -20px;
+	border: 22px solid;
+	border-color: transparent transparent transparent lightyellow;
+
+/*Right triangle, placed bottom right side slightly in*/
+.tri-right.border.btm-right:before {
+	content: ' ';
+	position: absolute;
+	width: 0;
+	height: 0;
+  left: auto;
+	right: -8px;
+	bottom: -40px;
+	border: 20px solid;
+	border-color: #666 #666 transparent transparent;
+}
+.tri-right.btm-right:after{
+	content: ' ';
+	position: absolute;
+	width: 0;
+	height: 0;
+  left: auto;
+	right: 0px;
+	bottom: -20px;
+	border: 12px solid;
+	border-color: lightyellow lightyellow transparent transparent;
+}
+
+/* Right triangle, right side slightly down*/
+.tri-right.border.right-in:before {
+	content: ' ';
+	position: absolute;
+	width: 0;
+	height: 0;
+  left: auto;
+	right: -40px;
+  top: 30px;
+	bottom: auto;
+	border: 20px solid;
+	border-color: #666 transparent transparent #666;
+}
+.tri-right.right-in:after{
+	content: ' ';
+	position: absolute;
+	width: 0;
+	height: 0;
+  left: auto;
+	right: -20px;
+  top: 38px;
+	bottom: auto;
+	border: 12px solid;
+	border-color: lightyellow transparent transparent lightyellow;
+}
+
+/* Right triangle placed top right flush. */
+.tri-right.border.right-top:before {
+	content: ' ';
+	position: absolute;
+	width: 0;
+	height: 0;
+  left: auto;
+	right: -40px;
+  top: -8px;
+	bottom: auto;
+	border: 32px solid;
+	border-color: #666 transparent transparent transparent;
+}
+.tri-right.right-top:after{
+	content: ' ';
+	position: absolute;
+	width: 0;
+	height: 0;
+  left: auto;
+	right: -20px;
+  top: 0px;
+	bottom: auto;
+	border: 20px solid;
+	border-color: lightyellow transparent transparent transparent;
+}
+
+/* talk bubble contents */
+.talktext{
+  padding: 1em;
+	text-align: left;
+  line-height: 1.5em;
+}
+.talktext p{
+  /* remove webkit p margins */
+  -webkit-margin-before: 0em;
+  -webkit-margin-after: 0em;
+}
 </style>
 <script type="text/javascript">
 	var TxtRotate = function(el, toRotate, period) {
@@ -143,27 +401,32 @@ window.onload = function() {
           	<div class="blog-post-title">
                               <h3><a href="single-post.html">Let me write you an apology letter </a></h3>
                          </div>
-          	<div class="blog-post-des">
-                              <p>Dear Manu,<br>
-                              I know I have not behaved well with you 😢. I have made a mistake. I totally accept my mistake. I have been thinking
-                          of you all the time. I put myself in your place and analysed the entire thing again. I have realised how wrong I was when I said such a useless thing to you 😣. I did not think before speaking. I know I got a bit excited. The excitement did not allow me to think before speaking. I had not talked to you for a long time. This made me restless. I just could not control and said the words without applying brains to it. I feel the guilt. I have been repenting all the time 😣. I have spent my time thinking about you and my mistake. I have not been able to take my mind off it. I did not even talk to anyone much and even was inactive on social media. I admit that I have made a mistake 😢. I am writing this letter to seek an apology from you 🙏. </p>
+          	<center>
+<div class="talk-bubble tri-right left-top">
+  <div class="talktext">
+    <p>Dear Manu,<br></p><br>
+    <p>I know I have not behaved well with you 😢. I have made a mistake. I totally accept my mistake. I have been thinking of you all the time. I put myself in your place and analysed the entire thing again. I have realised how wrong I was when I said such a useless thing to you 😣. I did not think before speaking. I know I got a bit excited. The excitement did not allow me to think before speaking. I had not talked to you for a long time. This made me restless. I just could not control and said the words without applying brains to it. I feel the guilt. I have been repenting all the time 😣. I have spent my time thinking about you and my mistake. I have not been able to take my mind off it. I did not even talk to anyone much and even was inactive on social media. I admit that I have made a mistake 😢. I am writing this letter to seek an apology from you 🙏.</p><br>
+     <p>
+                          	I was always prone to doing dumb mistakes, but breaking your heart is something I cannot accept. No matter how many times you refuse to forgive me, I will keep trying. Because my love for you is something that cannot be easily forgotten. I know that my actions have damaged the bond that the two of us share 😔, but I am asking you to forgive me because I cannot live without you beside me. I cannot believe that I managed to break the heart of such a beautiful creature like you. I am a giant fool for not being more careful of my words and actions 😔. You have always been more mature than me, and you have this sense of forgiveness that always comes to play when I do stupid things. So I am begging you to forgive me one last time, I am terribly sorry for what I have done 😟. It’s been a long day without you, I cannot stand this feeling of loneliness, and it pains me to see you get hurt, especially when I am the one to blame. You truly are the woman of my life. I am terribly sorry 😢.
+                          </p><br>
+    <p>
+                          	You truly are the best thing you have happened in my life. I know that you do not deserve an idiot like, yet, I want to become selfish and ask you to forgive me and take me back 😟. Even though I don’t deserve it, would you ever be able to find it in your heart to forgive me? I want another chance to win your affections.I promise you that I will be a better person from now on and I will never hurt you again. I promise you that I will put more effort into our relationship so that it goes a long way. I am sorry please stay with me.😞 I did not mean any of the harsh words I said earlier. I am sorry for being immature. I can never think of hurting you intentionally, whatever I did I have done mistakenly. I should have been careful about what I say, I did not want to hurt you 😓. I am very fortunate to meet someone like you. Please don’t go away, you are my life. For all the times you have not slept well and you cried because of me, I apologize for all those sleepless nights. Please forgive me.🙏 
+                          </p><br>
                           <p>
-                          	I was always prone to doing dumb mistakes, but breaking your heart is something I cannot accept. No matter how many times you refuse to forgive me, I will keep trying. Because my love for you is something that cannot be easily forgotten. I know that my actions have damaged the bond that the two of us share 😔, but I am asking you to forgive me because I cannot live without you beside me. I cannot believe that I managed to break the heart of such a beautiful creature like you. I am a giant fool for not being more careful of my words and actions 😔. You have always been more mature than me, and you have this sense of forgiveness that always comes to play when I do stupid things. So I am begging you to forgive me one last time, I am terribly sorry for what I have done. It’s been a long day without you, I cannot stand this feeling of loneliness, and it pains me to see you get hurt, especially when I am the one to blame. You truly are the woman of my life. I am terribly sorry 😢.
-                          </p>
+                          	You are my strength, yet you are angry with me. I feel very weak and exposed 😖. Please accept my deepest apologies and let us unite again. We are not meant to be apart. I have an utmost trust in the God and i know that you will forgive me soon. Till then I am waiting. Your main objective for this separation is to make me realize my mistakes. I understand now and I am very sorry baby 😥. I was being stupid. Please come back now. I have been missing you a lot these days. I am dying to talk to you 😔. All the time that I am awake is spent reading our old chats. For me that's the only way right now to talk to you or feel the conversations. It is pretty hard to not talk to you. Reading chats can only provide an intermediate support but cannot equal the pleasure of talking to you 😖. I have been very angry with myself. I must have given myself thousands of bad words for my actions. I feel a lot of guilt. I have been feeling bad for hurting you. No one is perfect and I know I have more faults than other people but you are the only one I have given my heart because I knew it that only you are meant to hold it. I can't believe what a fool I was to treat you the way I did on that day 😰. 
+                          </p><br>
                           <p>
-                          	You truly are the best thing you have happened in my life. I know that you do not deserve an idiot like, yet, I want to become selfish and ask you to forgive me and take me back 😟. Even though I don’t deserve it, would you ever be able to find it in your heart to forgive me? I want another chance to win your affections.I promise you that I will be a better person from now on and I will never hurt you again. I promise you that I will put more effort into our relationship so that it goes a long way. I am sorry please stay with me.😞 I did not mean any of the harsh words I said earlier. I am sorry for being immature. I can never think of hurting you intentionally, whatever I did I have done mistakenly. I should have been careful about what I say, I did not want to hurt you 😓. I am very fortunate to meet someone like you. Please don’t go away, you are my life. For all the times you have not slept well and you cried because of me, I apologize for all those sleepless nights. Please forgive me. 
-                          </p>
-                          <p>
-                          	You are my strength, yet you are angry with me. I feel very weak and exposed 😖. Please accept my deepest apologies and let us unite again. We are not meant to be apart. I have an utmost trust in the God and i know that you will forgive me soon. Till then I am waiting. Your main objective for this separation is to make me realize my mistakes. I understand now and I am very sorry baby 😥. I was being stupid. Please come back now. I have been missing you a lot these days. I am dying to talk to you. All the time that I am awake is spent reading our old chats. For me that's the only way right now to talk to you or feel the conversations. It is pretty hard to not talk to you. Reading chats can only provide an intermediate support but cannot equal the pleasure of talking to you 😖. I have been very angry with myself. I must have given myself thousands of bad words for my actions. I feel a lot of guilt. I have been feeling bad for hurting you. No one is perfect and I know I have more faults than other people but you are the only one I have given my heart because I knew it that only you are meant to hold it. I can't believe what a fool I was to treat you the way I did on that day 😰. 
-                          </p>
-                          <p>
-                          	You are an amazing, strong woman. Thank you for standing up to me, showing me how wrong I was, and forcing me to take a good, hard look at myself in the mirror. I didn’t like what I saw, so I’ve made some changes. Please forgive me and give me a chance to show you how I’ve changed 😣. We all make mistakes, some are big some are small. But I don’t think that we should let our mistakes define us. So please, remember all the good things we’ve been through, and imagine the ones we will go through in the future. And when you do that, please reconsider your decision and forgive me for all I’ve done 😢. I know that I am a terrible person, I know I am a fool, but at least, I’m your fool. I am sorry, forgive me for what I’ve done 😞. Please forgive me for not living up to the image I tried to portray 😔. In the future, if you forgive me, I’ll work hard to make sure my actions match my words 😟! Please forgive my foolish, insensitive words and actions and allow me the chance to change and grow into the kind of man you truly deserve. Take your time. With a bruised heart and a deflated ego, with sad soul and a head hung low. I apologize to you unconditionally, Manu I am really very sorry 😦😦😦😦🙏🙏🙏. I love you ❤❤❤❤❤.<br>
+                          	You are an amazing, strong woman. Thank you for standing up to me, showing me how wrong I was, and forcing me to take a good, hard look at myself in the mirror. I didn’t like what I saw, so I’ve made some changes. Please forgive me and give me a chance to show you how I’ve changed 😣. We all make mistakes, some are big some are small. But I don’t think that we should let our mistakes define us. So please, remember all the good things we’ve been through, and imagine the ones we will go through in the future. And when you do that, please reconsider your decision and forgive me for all I’ve done 😢. I know that I am a terrible person, I know I am a fool, but at least, I’m your fool. I am sorry, forgive me for what I’ve done 😞. Please forgive me for not living up to the image I tried to portray 😔. In the future, if you forgive me, I’ll work hard to make sure my actions match my words 😟! Please forgive my foolish, insensitive words and actions and allow me the chance to change and grow into the kind of man you truly deserve. Take your time. With a bruised heart and a deflated ego, with sad soul and a head hung low. I apologize to you unconditionally, Manu I am really very sorry 😭😭😭😭🙏🙏🙏. I love you ❤❤❤❤❤.</p><br>
                           
-                            Yours Truly,<br>
+                            <p>Yours Truly,<br>
                             Yash<br>
                             Written from my heart that belongs to you❤❤❤❤❤❤.</p>
-                            <hr>
-						</div>
+  </div>
+</div>
+</center>
+
+
+
 						<div class="blog-post-title">
                               <center><h3>Please forgive me if possible 😭😭🙏🙏🙏</h3></center>
                          </div>
